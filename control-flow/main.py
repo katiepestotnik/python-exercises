@@ -113,7 +113,6 @@ def fibo():
        n2 = add
        count += 1 
        print(f'Term: {count -1} Fib Number: {n2}')
-
 #fibo()
 
 
