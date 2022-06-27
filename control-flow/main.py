@@ -138,8 +138,8 @@ def fibo():
 # After setting the likely season, you can use another if...elif...else statement to "adjust" if
 # the day number falls within a certain range.
 def season():
-    month = input(f'Enter the month of the season (Jan - Dec)').lower()
-    day = int(input(f'Enter the day of the month'))
+    month = input(f'Enter the month of the season (Jan - Dec): ').lower()
+    day = int(input(f'Enter the day of the month: '))
     season = None
     if month in ( 'jan', 'feb','mar'):
         season = 'Winter'
@@ -149,6 +149,14 @@ def season():
         season = 'Summer'
     if month in ( 'oct', 'nov','dec'):
         season = 'Fall'
+    if month == 'dec' and day in range(21, 32):
+        season = 'Winter'
+    if month == 'mar' and day in range(20, 32):
+        season = 'Spring'
+    if month == 'jun' and day in range(21, 31):
+            season = 'Summer'
+    if month == 'sept' and day in range(22, 31):
+            season = 'Fall'
     upper = month.upper()
-    print(f'{upper}, {day} is in {season}')
+    print(f'{upper}, {day} is in {season}.')
 #season()
