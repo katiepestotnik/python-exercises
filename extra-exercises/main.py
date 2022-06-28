@@ -29,4 +29,26 @@ def reverse_loop(str):
         #print(str[length])
         new_string += str[length]
     return new_string
-print(reverse_loop('hello again'))
+#print(reverse_loop('hello again'))
+
+#exercise3
+def bank_transations():
+    balance = int(input('What is your starting balance?\n'))
+    while True:
+        user_input = input("Would you like to check balance, deposit or withdraw? Select one: balance, deposit, withdraw or quit to exit\n")
+        if user_input == 'balance':
+            print(f'Your balance is {balance}')
+        if user_input == 'deposit':
+            deposit = int(input('How much do you want to deposit?\n'))
+            balance += deposit
+            print(f'Thank you for your deposit of ${deposit} your new balance is ${balance}')
+        if user_input == 'withdraw':
+            withdraw = int(input('How much do you want to withdraw?\n'))
+            balance -= withdraw
+            print(f'You have withdrawn ${withdraw} your new balance is ${balance}')
+        if user_input == 'quit':
+            print("Thank's, come again!")
+            break
+bank_transations()
+
+        
