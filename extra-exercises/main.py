@@ -49,6 +49,15 @@ def bank_transations():
         if user_input == 'quit':
             print("Thank's, come again!")
             break
-bank_transations()
+#bank_transations()
 
-        
+#exercise4
+
+def alpha():
+    string = input("Give me a string\n")
+    sort_list = sorted(string)
+    new_string = ''
+    for s in sort_list:
+        new_string += '' + s
+    return new_string
+print(f'Your sorted string is: {alpha()}')
