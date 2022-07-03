@@ -78,16 +78,17 @@ def what_triange():
     tri_type = None
     if(a == b and c == a):
         tri_type = 'equilateral'
-    if(a == b and a != c):
+    elif(a == b and a != c):
         tri_type = 'isosceles' 
-    if (a == c and a !=b):
+    elif (a == c and a !=b):
         tri_type = 'isosceles' 
-    if(b == c and b != a):
+    elif(b != a and b == c):
         tri_type = 'isosceles'
-    if(a != b and a != c):
+    else:
         tri_type = 'scalene'
     print(f'A triangle with sides of {a}, {b} & {c} is a {tri_type} triangle')
-#what_triange()
+what_triange()
+
 
 # exercise-05 Fibonacci sequence for first 50 terms
 
