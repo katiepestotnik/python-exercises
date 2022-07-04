@@ -107,14 +107,14 @@ what_triange()
 def fibo():
     n1 = 0
     n2 = 1
-    count = 0
-    while count <= 50:
+    for count in range(51):
+       print(f'Term: {count} Fib Number: {n1}')
        add = n1 + n2
        n1 = n2
        n2 = add
        count += 1 
-       print(f'Term: {count -1} Fib Number: {n2}')
-#fibo()
+    
+fibo()
 
 
 # exercise-06 What's the  Season?
